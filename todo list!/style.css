@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 650px) {
+	.task {
+		min-width: 350px !important;
+	}
+
+	#input-field {
+		width: 21.875rem !important;
+		margin-bottom: 1rem;
+		margin-right: 0 !important;
+	}
+
+	.input-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#nav-container {
+		max-width: 300px !important;
+	}
+
+	#input-empty {
+		align-self: center !important;
+		padding-left: 0rem !important;
+		padding-bottom: 1rem;
+	}
+}
+
+body {
+	background-image: url(/img/background.svg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+/* upper text  */
+#nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 3rem;
+	margin: 1rem auto 5rem auto;
+	max-width: 600px;
+}
+
+.logo {
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #ffffff;
+	white-space: nowrap;
+	margin: 2rem;
+}
+
+/* input  */
+.btn {
+	padding: 0.75rem;
+}
+
+#input-field {
+	display: inline;
+	width: 25rem;
+	height: 2.5rem;
+	padding-left: 1rem;
+	margin-right: 1rem;
+}
+
+.myButton {
+	background: linear-gradient(to bottom, #c62368 5%, #fa7268 100%);
+	background-color: #599bb3;
+	border-radius: 8px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 9px 32px;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fa7268;
+}
+.myButton:hover {
+	background: linear-gradient(to bottom, #fa7268 5%, #c62368 100%);
+	background-color: #408c99;
+}
+.myButton:active {
+	position: relative;
+	top: 1px;
+}
+
+.input-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* task to be added  */
+#container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.task {
+	margin: 0.5rem 0.5rem;
+	padding: 1rem;
+	background-color: #ffffff;
+	border-radius: 5px;
+	min-width: 600px;
+	max-width: 601px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: transform .5s ease-in-out; 
+  transform: translateX(-100%);
+}
+
+.task-out {
+	width: 600px;
+  transition: 0.5s all ease-out;
+	transform: translateX(-100%);
+}
+
+.task p {
+	max-width: 90%;
+}
+
+#task-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#input-empty {
+	align-self: flex-start;
+	padding-left: 1.5rem;
+	padding-bottom: 1rem;
+	color: #c62368;
+	display: none;
+}
+
+.clear-btn {
+	margin-top: 2rem;
+	margin-bottom: 5rem;
+}
+
+.delete {
+	width: 20px;
+	cursor: pointer;
+}
+
+.clear-all {
+  transition: 0.5s all ease-out;
+	transform: translateX(-100%);
+}

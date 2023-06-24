@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<title>Todo List</title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="nav-container">
+				<h1 class="logo">Todo List</h1>
+				<div id="input-empty">
+					<p>*Please Enter Text To Submit</p>
+				</div>
+				<form type="text" class="input-container" onsubmit="return false">
+					<input type="text" id="input-field" placeholder="Enter Task Here" />
+					<button class="myButton">Submit</button>
+				</form>
+			</div>
+
+
+			<div id="container">
+				<div id="task-container"></div>
+				<div id="clear-btn">
+					<button type="button" class="myButton clear-btn">Clear</button>
+				</div>
+			</div>
+		</div>
+		<script src="/app.js"></script>
+	</body>
+</html>
